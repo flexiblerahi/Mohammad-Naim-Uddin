@@ -1,0 +1,16 @@
+body {
+    cursor:pointer;
+}
+
+#cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #e7c82f00;
+    border: 3px solid #e7c82f;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 100;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+
+}

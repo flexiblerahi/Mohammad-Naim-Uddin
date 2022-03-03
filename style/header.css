@@ -1,0 +1,279 @@
+
+body {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none; 
+}
+.header {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(27, 27, 27);
+    height: 100vh;
+    width: 100%;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    min-height: 80vh;
+    /* z-index: 100; */
+}
+/* .heading>.wrapper {
+    display: inline-flex;
+     */
+/* } */
+
+.wrapper {
+    z-index: 100;
+}
+.wrapper .static-txt {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 8px;
+    
+}
+
+.wrapper .dynamic-txts {
+    /* margin-bottom: 10px;
+    ove */
+    height: 70px;
+    overflow: hidden;
+    /* line-height: 90px; */
+}
+
+.dynamic-txts li {
+    color: skyblue;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 45px;
+    font-weight: 350;
+    position: relative;
+    top: 0; 
+    animation: slide 10.5s steps(3) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -198px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    /* font-family: Source Code Pro; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    
+    height: 90%;
+    width: 100%;
+    left:0;
+    top:1px;
+    background-color: rgb(27, 27, 27);
+    /* background-color: red; */
+    border-left: 2px solid white;
+    animation: typing 3.5s steps(19) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -22px 0 22px;
+    }
+}
+
+.codelng h1{
+    z-index: 40;
+    font-weight:400;
+    position: absolute;
+    color: whitesmoke;
+    top:100px;
+    left: 100px;
+}
+
+#laravel {
+    position: absolute;
+    top: 0;
+    -webkit-animation-name: laravel;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: laravel;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes laravel {
+    0%, 100% {
+        opacity: 0;
+   }
+    50% {
+        opacity: 1;
+   }
+}
+
+#php {
+    position: absolute;
+    top: 0;
+    -webkit-animation-name: php;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: php;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes php {
+    0%, 100% {
+        opacity: 0;
+   }
+    50% {
+        opacity: 1;
+        
+   }
+}
+
+#js {
+    position: absolute;
+    top: 0;
+    -webkit-animation-name: js;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: js;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes js {
+    0%, 100% {
+        opacity: 0;
+   }
+    50% {
+        opacity: 1;
+   }
+}
+
+#react {
+    position: absolute;
+    top: 0;
+    -webkit-animation-name: react;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: react;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes react {
+    0%, 100% {
+        opacity: 0;
+   }
+    50% {
+        opacity: 1;
+   }
+}
+
+#intertia {
+    position: absolute;
+    top: 0;
+    -webkit-animation-name: intertia;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: intertia;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes intertia {
+    0%, 100% {
+        opacity: 0;
+   }
+    50% {
+        opacity: 1;
+   }
+}
+
+#sql {
+    position: absolute;
+    top: 0;
+    -webkit-animation-name: sql;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: sql;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes sql {
+    0%, 100% {
+        opacity: 0;
+   }
+    50% {
+        opacity: 1;
+   }
+}
+
+#nonsql {
+    position: absolute;
+    top: 0;
+    -webkit-animation-name: nonsql;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: nonsql;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes nonsql {
+    0%, 100% {
+        opacity: 0;
+   }
+    50% {
+        opacity: 1;
+   }
+}
+
+#python {
+    position: absolute;
+    top: 0;
+    -webkit-animation-name: python;
+    -webkit-animation-duration: 9s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: python;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes python {
+    0%, 100% {
+        opacity: 0;
+   }
+    50% {
+        opacity: 1;
+   }
+}
+
+#webscraping {
+    position: absolute;
+    top: 0;
+    -webkit-animation-name: webscraping;
+    -webkit-animation-duration: 9s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: webscraping;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes webscraping {
+    0%, 100% {
+        opacity: 0;
+   }
+    50% {
+        opacity: 1;
+   }
+}
