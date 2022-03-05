@@ -1,10 +1,4 @@
 
-body {
-    -webkit-user-select: none;  /* Chrome all / Safari all */
-    -moz-user-select: none;     /* Firefox all */
-    -ms-user-select: none;      /* IE 10+ */
-    user-select: none; 
-}
 .header {
     margin: 0px;
     padding: 0px;
@@ -276,4 +270,153 @@ body {
     50% {
         opacity: 1;
    }
+}
+
+.mycv> a{
+    color:rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top:80%;
+    left:3%;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background: #262c37;
+    padding: 10px 30px;
+    /* display: block; */
+}
+.mycv> a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+.mycv> a span {
+    display: block;
+    position: absolute;
+    background: gold;
+}
+
+.mycv> a span:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.mycv> a:hover span:nth-child(1) {
+   transform: scaleY(1);
+   transform-origin: bottom;
+   transition: transform 0.5s;
+}
+
+.mycv> a span:nth-child(2) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.mycv> a:hover span:nth-child(2) {
+   transform: scaleX(1);
+   transform-origin: left;
+   transition: transform 0.5s;
+}
+
+/* style="border-radius: 10px;position: absolute; top:80%;" */
+
+
+
+/* style="border-radius: 10px;position: absolute; top:80%;" */
+
+.mailme> a{
+    color:rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top:80%;
+    left:16%;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background: #262c37;
+    padding: 10px 30px;
+    /* display: block; */
+}
+
+.mailme> a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+.mailme> a span {
+    display: block;
+    position: absolute;
+    background: gold;
+}
+
+.mailme> a span:nth-child(1) {
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.mailme> a:hover span:nth-child(1) {
+   transform: scaleY(1);
+   transform-origin: top;
+   transition: transform 0.5s;
+}
+
+.mailme> a span:nth-child(2) {
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.mailme> a:hover span:nth-child(2) {
+   transform: scaleX(1);
+   transform-origin: right;
+   transition: transform 0.5s;
+}
+
+@media (max-width: 991px){
+
+    .mycv> a{
+        color:rgba(255, 255, 255, 0.4);
+        position: absolute;
+        top:75%;
+        left:3%;
+        font-size: 30px;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background: #262c37;
+        padding: 10px 30px;
+        /* display: block; */
+    }
+    .mailme> a{
+        color:rgba(255, 255, 255, 0.4);
+        position: absolute;
+        top:90%;
+        left:3%;
+        font-size: 30px;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background: #262c37;
+        padding: 10px 30px;
+        /* display: block; */
+    }
 }

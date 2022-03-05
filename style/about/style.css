@@ -4,7 +4,10 @@ body {
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
     user-select: none; 
+    
 }
+
+
 
 .heading .title {
     position: absolute;
@@ -12,6 +15,7 @@ body {
     left: 10%;
     color: white;
 }
+
 .gold-box {
     border:3px solid white;
     background-color: gold;
@@ -22,8 +26,11 @@ body {
     position: absolute;
     top:17px;
 }
+
 .description {
+    font-family:Consolas, 'Courier New', monospace;
     position: absolute;
     color:white;
     top:40%;
+    
 }
